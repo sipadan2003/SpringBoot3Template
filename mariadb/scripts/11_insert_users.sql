@@ -1,0 +1,19 @@
+INSERT INTO `users` (id, login, hashed_password, api_token, first_name, last_name, admin, active ) VALUES (
+    '1',
+    'admin',
+    '$2a$10$17QH8A/cduV1QNHaumsOBeFqEZE8Tx/UviIqo2Vk8mZjdBpIg0HhW',
+    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlzcyI6IlROQ29tbXVuaWNhdGlvbnMiLCJhZG1pbiI6dHJ1ZSwiZ2VuZXJhdGVkX3RpbWUiOjE2NzM0NTAxMjEzMjR9.uZ3_Ao4qURsXi8SxdfbbNZ3E1FVjgmSglq0u5Pj_ZJHs099vTPxPC9jQ_XSHtEI5WBbjSIu0uwVF1LFQOQ11uQ',
+    'Administrator',
+    'SBT',
+    true,
+    true
+),(
+    '2',
+    'user',
+    '$2a$10$9Ag9STqhVfD0YNiHYg5NJ.81pEzm8iMFOgd50MNtWPYF3g/GolmC.',
+    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaXNzIjoiVE5Db21tdW5pY2F0aW9ucyIsImFkbWluIjpmYWxzZSwiZ2VuZXJhdGVkX3RpbWUiOjE2NzM0NTAyMDc4MTN9.YOUjkSxILFz2EgsQWz3R18Rl8UEQ6LkEVPk9x6NGUmXaZYAToGXCC9F-cq1cA7r__lJNbjUoYcEmT6Brsgpn9Q',
+    'User',
+    'SBT',
+    false,
+    true
+);

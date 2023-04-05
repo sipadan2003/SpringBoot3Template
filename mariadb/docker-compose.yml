@@ -1,0 +1,18 @@
+version: '3'
+services:
+  db:
+    container_name: 'sbt'
+    build: ./docker-mariadb
+    restart: always
+    volumes:
+      - ./db_data:/var/lib/mysql
+      - ./scripts:/tmp/mysql/scripts
+    ports:
+      - '23306:3306'
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: 'sbt_pw'
+      MYSQL_DATABASE: 'sbt_db'
+      MYSQL_USER: 'sbt'
+      MYSQL_PASSWORD: 'sbt_pw'
+      TZ: 'Asia/Tokyo'
